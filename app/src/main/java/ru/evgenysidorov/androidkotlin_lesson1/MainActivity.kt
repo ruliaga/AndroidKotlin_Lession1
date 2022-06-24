@@ -31,6 +31,24 @@ class MainActivity : AppCompatActivity() {
             "!!!",
             dataClass2.name + ", возраст " + dataClass2.age + " лет, окрас " + dataClass2.color
         )
+
+        val cats = listOf<Cat>(
+            Cat("Васька",2, "Белый"),
+            Cat("Тузик",6,"Белый"),
+            Cat("Мурзик",5,"Черный"),
+            Cat("Мурка",5,"Серый"))
+
+        for (Cat in cats){
+            Log.d("!!!",Cat.name + " (цикл for)")
+        }
+
+        for (i in 500 downTo 0 step 100){
+            Log.d("!!!","Привет")
+        }
+
+
     }
+
+
 
 }
